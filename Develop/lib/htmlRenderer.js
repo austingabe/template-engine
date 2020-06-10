@@ -9,6 +9,7 @@ const render = employees => {
   html.push(employees
     .filter(employee => employee.getRole() === "Manager")
     .map(manager => renderManager(manager))
+    //map is basically a for loop
   );
   html.push(employees
     .filter(employee => employee.getRole() === "Engineer")
